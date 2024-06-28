@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odin Library</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="library">
+                <div class="book">
+                    <div class="text">
+                        <div class="title">How to Program</div>
+                        <div class="author">By: Kaden Zheng</div>
+                    </div>
+                    <div class="bottom">
+                        <input type="checkbox" id="read-toggle" name="Read" value="Read" />
+                        <div class="pages">100 pages</div>
+                    </div>
+                </div>
+            </div>
+            <button class="add-book">Add Book</button>
+        </div>
+        <dialog>
+            <form class="book-form">
+                <fieldset>
+                    <legend>Add Book</legend>
+                    <div class="title">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" placeholder="Title" />
+                    </div>
+                    <div class="field">
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="author" placeholder="Author" />
+                    </div>
+                    <div class="field">
+                        <label for="pages">Pages:</label>
+                        <input type="number" id="pages" name="pages" placeholder="Pages" />
+                    </div>
+                    <div class="field read-yet">
+                        <label for="read">Read yet?</label>
+                        <input id="checkbox" type="checkbox" name="read" id="read" />
+                    </div>
+                </fieldset>
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </dialog>
+    </body>
+</html>
